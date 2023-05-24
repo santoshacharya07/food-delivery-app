@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:food_delivery/home/food_page_body.dart';
 import 'package:food_delivery/utils/dimensions.dart';
 import 'package:food_delivery/widgets/big_text.dart';
@@ -19,7 +16,7 @@ class MainFoodPage extends StatefulWidget {
 class _MainFoodPageState extends State<MainFoodPage> {
   @override
   Widget build(BuildContext context) {
-    print("current height is " + MediaQuery.of(context).size.height.toString());
+    //("current height is " + MediaQuery.of(context).size.height.toString());
     return Scaffold(
         body: Column(
       children: [
@@ -46,7 +43,7 @@ class _MainFoodPageState extends State<MainFoodPage> {
                           text: "Kathmandu",
                           color: Colors.black54,
                         ),
-                        Icon(Icons.arrow_drop_down_rounded),
+                        const Icon(Icons.arrow_drop_down_rounded),
                       ],
                     )
                   ],
@@ -71,7 +68,10 @@ class _MainFoodPageState extends State<MainFoodPage> {
           ),
         ),
         //showing the body
-        FoodPageBody(),
+        Expanded(
+            child: SingleChildScrollView(
+          child: FoodPageBody(),
+        ))
       ],
     ));
   }

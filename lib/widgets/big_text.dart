@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:food_delivery/utils/dimensions.dart';
-import 'package:get/get_connect/http/src/utils/utils.dart';
 
+// ignore: must_be_immutable
 class BigText extends StatelessWidget {
   Color? color;
   final String text;
@@ -26,7 +23,7 @@ class BigText extends StatelessWidget {
       overflow: overflow,
       style: TextStyle(
         fontFamily: "Roboto",
-        fontSize: size==0?Dimensions.font20:size,
+        fontSize: size == 0 ? Dimensions.font20 : size,
         color: color,
         fontWeight: FontWeight.w400,
       ),
