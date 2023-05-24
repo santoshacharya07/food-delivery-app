@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:food_delivery/utils/dimensions.dart';
 import 'package:food_delivery/widgets/app_column.dart';
 import 'package:food_delivery/widgets/app_icon.dart';
+import 'package:food_delivery/widgets/expandable_text_widget.dart';
 
 import '../../utils/colors.dart';
 import '../../widgets/big_text.dart';
@@ -15,6 +16,7 @@ class PopularFoodDetail extends StatelessWidget {
       backgroundColor: Colors.white,
       body: Stack(
         children: [
+          //background image
           Positioned(
             left: 0,
             right: 0,
@@ -31,6 +33,7 @@ class PopularFoodDetail extends StatelessWidget {
               ),
             ),
           ),
+          // icon widgets
           Positioned(
             top: Dimensions.height45,
             left: Dimensions.width20,
@@ -47,6 +50,8 @@ class PopularFoodDetail extends StatelessWidget {
               ],
             ),
           ),
+          //introducation of food
+
           Positioned(
             left: 0,
             right: 0,
@@ -74,7 +79,17 @@ class PopularFoodDetail extends StatelessWidget {
                     ),
                     BigText(
                       text: "Introduce",
-                    )
+                    ),
+                    SizedBox(
+                      height: Dimensions.height20,
+                    ),
+                    Expanded(
+                      child: SingleChildScrollView(
+                        child: const ExpandableTextWidget(
+                            text:
+                                "We crave for new sensations but soon become indifferent to them. The wonders of yesterday are today common occurrences.Of all things, I liked books best.Most persons are so absorbed in the contemplation of the outside world that they are wholly oblivious to what is passing on within themselves.We crave for new sensations but soon become indifferent to them. The wonders of yesterday are today common occurrences.Of all things, I liked books best.Most persons are so absorbed in the contemplation of the outside world that they are wholly oblivious to what is passing on within themselves. We crave for new sensations but soon become indifferent to them. The wonders of yesterday are today common occurrences.Of all things, I liked books best.Most persons are so absorbed in the contemplation of the outside world that they are wholly oblivious to what is passing on within themselves. We crave for new sensations but soon become indifferent to them. The wonders of yesterday are today common occurrences.Of all things, I liked books best.Most persons are so absorbed in the contemplation of the outside world that they are wholly oblivious to what is passing on within themselves. We crave for new sensations but soon become indifferent to them. The wonders of yesterday are today common occurrences.Of all things, I liked books best.Most persons are so absorbed in the contemplation of the outside world that they are wholly oblivious to what is passing on within themselves. We crave for new sensations but soon become indifferent to them. The wonders of yesterday are today common occurrences.Of all things, I liked books best.Most persons are so absorbed in the contemplation of the outside world that they are wholly oblivious to what is passing on within themselves"),
+                      ),
+                    ),
                   ],
                 )),
           ),
