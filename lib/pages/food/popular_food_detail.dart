@@ -83,9 +83,9 @@ class PopularFoodDetail extends StatelessWidget {
                     SizedBox(
                       height: Dimensions.height20,
                     ),
-                    Expanded(
+                    const Expanded(
                       child: SingleChildScrollView(
-                        child: const ExpandableTextWidget(
+                        child: ExpandableTextWidget(
                             text:
                                 "We crave for new sensations but soon become indifferent to them. The wonders of yesterday are today common occurrences.Of all things, I liked books best.Most persons are so absorbed in the contemplation of the outside world that they are wholly oblivious to what is passing on within themselves.We crave for new sensations but soon become indifferent to them. The wonders of yesterday are today common occurrences.Of all things, I liked books best.Most persons are so absorbed in the contemplation of the outside world that they are wholly oblivious to what is passing on within themselves. We crave for new sensations but soon become indifferent to them. The wonders of yesterday are today common occurrences.Of all things, I liked books best.Most persons are so absorbed in the contemplation of the outside world that they are wholly oblivious to what is passing on within themselves. We crave for new sensations but soon become indifferent to them. The wonders of yesterday are today common occurrences.Of all things, I liked books best.Most persons are so absorbed in the contemplation of the outside world that they are wholly oblivious to what is passing on within themselves. We crave for new sensations but soon become indifferent to them. The wonders of yesterday are today common occurrences.Of all things, I liked books best.Most persons are so absorbed in the contemplation of the outside world that they are wholly oblivious to what is passing on within themselves. We crave for new sensations but soon become indifferent to them. The wonders of yesterday are today common occurrences.Of all things, I liked books best.Most persons are so absorbed in the contemplation of the outside world that they are wholly oblivious to what is passing on within themselves"),
                       ),
@@ -157,10 +157,12 @@ class PopularFoodDetail extends StatelessWidget {
                 text: "\$10 | Add to cart",
                 color: Colors.white,
               ),
-            )
+            ),
+            
           ],
         ),
       ),
+      
     );
   }
 }
